@@ -11,14 +11,14 @@
 3. ¿Qué diferencia hay entre una imagen y un contenedor? ¿Qué papel cumple el Dockerfile en esa relación?
     Una imagen vendría siendo una plantilla con instruccione para crar contenedores.  
     Un contenedor contiene lo necesario para ejecutar nuestras aplicaciones, y utiliza uno o más imagenes para su cración.
-Dockerfile por lo que se contiene las intrucciones para construir imagenes, ahi especificamos que images queremos utilizar asi como las dependencias etc. 
+    Dockerfile por lo que se contiene las intrucciones para construir imagenes, ahi especificamos que images queremos utilizar asi como las dependencias etc. 
     
 4. ¿Para qué sirve Docker Compose? En el mapeo 8000:8000, ¿qué representa el primer 8000 y qué
 representa el segundo? 
-    docker compose es basicamente para describir como queremos ejecutar uno o varios servios. En el caso del examen definimos los servicios de base de datos y API
+    docker compose es básicamente para describir como queremos ejecutar uno o varios servios. En el caso del examen definimos los servicios de base de datos y API
     El valor de la izquierda representa al anfitrión que vendría siendo el host, mientras que del lado derecho encontramos al contendor. 
 
 5. ¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? ¿Qué identifica
 la llave primaria id? 
-Las laptos se guardan en MySQL porque asi podemos agregar la cantidad de laptos que quisieramos sin estar ocupando tantas lineas de código. En un alista solo se mantiene en memoria o sea no existe persistencia en los datos, por lo que al reiniciar se perderían.
-La llave primaria id es la llave que identifica de manera única cada uno de los elementos de la base de datos, este no se repite, por ejemplo si tenemos a 2 personas con el mismo nombre, pues lo que nos ayudaria a identificarlos sería el ID. 
+    En una lista solo se mantiene en memoria o sea no existe persistencia en los datos, por lo que al reiniciar se perderían.
+    La llave primaria id es la llave que identifica de manera única cada uno de los elementos de la base de datos, este no se repite, por ejemplo si tenemos a 2 personas con el mismo nombre, pues lo que nos ayudaria a identificarlos sería el ID. 
