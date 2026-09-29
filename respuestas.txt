@@ -1,0 +1,24 @@
+1. Explica 2 diferencias entre API REST y un servidor Graphql.
+    1. Una diferencia principal es que API Rest utiliza muchos endpoins para poder, buscar, editar, eliminar, a diferencia de graphql el cual se podria decir que solo usa un endpoint.
+    2. Mientras que en API Rest usamos los métodos http: POST, PUT, DELETE, GET para consulta y modificación de datos, en GraphQL para obtener datos es una Query y para modificar datos usamos mutaciones. 
+    Esto porque debemos definir al inicio ya sea como Mutation o Query.
+    3. Api rest podemos decir que son un monton de reglas donde los datos que se envian y reciben están estructurados, a diferencia de GraphQL el cual es más como un lenguaje de consuta.
+
+2. Indica una situación en la que conviene usar REST y otra en la que conviene usar GraphQL. 
+    API Rest: Donde los recursos estén definidos, o sea haya datos especificos. 
+    GraphQL: En aplicaciones moviles, por ejemplo facebook, basicamente cuando queremos que el usauario elija que buscar..
+
+3. ¿Qué diferencia hay entre una imagen y un contenedor? ¿Qué papel cumple el Dockerfile en esa relación?
+    Una imagen vendría siendo una plantilla con instruccione para crar contenedores.  
+    Un contenedor contiene lo necesario para ejecutar nuestras aplicaciones, y utiliza uno o más imagenes para su cración.
+Dockerfile por lo que se contiene las intrucciones para construir imagenes, ahi especificamos que images queremos utilizar asi como las dependencias etc. 
+    
+4. ¿Para qué sirve Docker Compose? En el mapeo 8000:8000, ¿qué representa el primer 8000 y qué
+representa el segundo? 
+    docker compose es basicamente para describir como queremos ejecutar uno o varios servios. En el caso del examen definimos los servicios de base de datos y API
+    El valor de la izquierda representa al anfitrión que vendría siendo el host, mientras que del lado derecho encontramos al contendor. 
+
+5. ¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? ¿Qué identifica
+la llave primaria id? 
+Las laptos se guardan en MySQL porque asi podemos agregar la cantidad de laptos que quisieramos sin estar ocupando tantas lineas de código. En un alista solo se mantiene en memoria o sea no existe persistencia en los datos, por lo que al reiniciar se perderían.
+La llave primaria id es la llave que identifica de manera única cada uno de los elementos de la base de datos, este no se repite, por ejemplo si tenemos a 2 personas con el mismo nombre, pues lo que nos ayudaria a identificarlos sería el ID. 
